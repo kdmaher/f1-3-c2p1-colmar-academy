@@ -1,0 +1,404 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+
+a {
+  text-decoration: none;
+  padding-left: 16px;
+  color: black;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 32px 0;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+h5, footer span {
+  font-size: 12px;
+  color: black;
+}
+
+p {
+  line-height: 1.35;
+  padding: 8px 8px 8px 0;
+}
+
+/* Header */
+
+header {
+  background-color: white;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  height: 32px;
+  padding: 0 2px 0 24px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: gray;
+}
+
+.title span {
+  padding: 0;
+  font-weight: bold;
+  color: black;
+}
+
+/* Navigation */
+
+nav {
+  padding-right: 16px;
+  align-self: center;
+  display: flex;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+.desktop {
+  display: inline-block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Main Banner */
+.newtext {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.text {
+  display: inline-flex;
+  flex-flow: column;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.newDay{
+  background-color: lightgray;
+}
+
+.newDay img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  margin: 32px 40px 32px 24px;
+  flex-shrink: 0;
+}
+
+.newDay h3 {
+    margin: 24px 0;
+}
+
+.newDay .newtext {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.newDay p, .bannerPic p {
+    margin-bottom: 24px;
+}
+
+/* Button */
+
+.start {
+  width: 75%;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+  padding: 16px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.start:hover {
+  background-color: navy;
+  color: white;
+}
+
+/* Banners  */
+
+.multi-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 32px 0;
+}
+
+.bannerPic{
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+
+.bannerPic img, video {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.bannerPic h2 {
+  padding: 0 0 24px 0;
+}
+
+#mobilePic {
+  display: none;
+}
+/* Features */
+
+.secondColumn {
+  display: flex;
+  flex-flow: column;
+  vertical-align: top;
+  margin-top: 16px;
+  width: 40%;
+}
+
+.content img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.content .text {
+  width: 65%;
+  margin: 8px 0;
+}
+
+.content a {
+  color: blue;
+  padding: 0;
+}
+.events{
+  border: 1px solid lightgray;
+  display: flex;
+}
+.OliverSack{
+  background-color: lightgray;
+}
+
+/* Courses  */
+
+.thesis .bannerPic {
+  padding: 32px 24px;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.courseContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.course {
+  width: 30%;
+  height: auto;
+  margin: 0 8px 16px 8px;
+  background-color: white;
+}
+
+.courses h2, .thesis h2 {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.course img {
+  width:100%;
+}
+
+.coursetext {
+  padding: 16px 0 0 16px;
+  margin: 24px auto;
+}
+
+.fisma{
+  background-color: lightgray;
+}
+
+/* Footer */
+
+footer {
+  background-color: white;
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer h5 {
+  font-family: "Helvetica", sans-serif;
+  display: inline-block;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+}
+
+footer nav {
+  align-self: auto;
+  padding-top: 16px;
+}
+
+footer span {
+  padding-left: 16px;
+}
+
+/* Mobile Settings */
+
+@media only screen and (max-width:480px) {
+
+/* hide */
+
+footer nav, .desktop, .logo, .information .bannerPic,
+.thesis .secondColumn, .thesis p, .thesis h3, .course img,
+.course p, #desktopPic {
+  display: none;
+}
+
+/* Mobile Header */
+
+.mobile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.mobile img {
+  width: auto;
+  height: 90%;
+}
+
+/* Mobile Start Banner */
+
+.start {
+  width: 100%;
+  align-self: center;
+}
+
+.newDay img {
+  width: 90%;
+  padding: 32px 16px;
+  margin: auto;
+}
+
+.newDay .newtext {
+  width: 100%;
+  padding: 0 16px;
+  margin: auto;
+}
+
+/* Mobile Campus  */
+
+.secondColumn, .content .text{
+  width: 100%;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+}
+
+#mobilePic {
+  display: block;
+  box-sizing: border-box;
+  padding: 16px 16px 24px 16px;
+}
+
+.content img {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+
+.content .text {
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.content a {
+  font-size: 16px;
+}
+
+/* Mobile Courses */
+
+.courses {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.courseContainer {
+  flex-flow: column;
+}
+
+.course {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+.coursetext {
+  padding: 16px;
+}
+
+/* Mobile Thesis  */
+
+.thesis .bannerPic {
+  width: 100%;
+  padding: 0 0 32px 0;
+}
+
+video {
+  margin:auto;
+}
+
+/* Mobile Footer */
+
+h5 {
+  margin: 24px 0 0 0;
+}
+
+}
